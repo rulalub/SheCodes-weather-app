@@ -19,15 +19,19 @@
 </head>
 <body>
 
-    <br/>
-   <div class="container">
 
-    <form id="search-form">
-    <input type="search" placeholder="Enter City" id="city-input"/>
-    <input type="submit" value="search" class="btn btn-primary"/>
-
-    </form>
-    <br/>
+    <div class="container">
+        <form class="row" id="current-city">
+            <div class="col-auto">
+                <input type="text" class="form-control" placeholder="Enter a city" id="current-city-input" />
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Search</button>
+                <button type="submit" class="btn btn-primary mb-3" id="current-location">
+                    Current location
+                </button>
+            </div>
+        </form>
 
 
      <h1 id="city">New York 
@@ -45,9 +49,7 @@
     
         <div class="card-body">
             <p class="card-text">
-                <img src="https://a.slack-edge.com/production-standard-emoji-assets/13.0/google-medium/26c5.png"
-                    width="50px" />
-
+                
             </p>
         </div>
     </div>
@@ -55,18 +57,20 @@
 
     </p>
 
-     <div class="time" id="time-id"> 12:30 </div>
-
      <br/>
      <h2>
 
-        <p id="nowTemperature" class="body-temperature">17° </p>
+      <p id="nowTemperature" class="body-temperature">17° </p>
         <span id= "unit-temperature">
        
             <a href="#" id="celsius-link"> °C</a> |
             <a href="#" id="fahrenhit-link"> °F</a>
+           <img src="https://a.slack-edge.com/production-standard-emoji-assets/13.0/google-medium/26c5.png" width="50px" />
+             <br>
+             
+           <div class="time" id="time-id"> 12:30  PM</div>
 
-
+               <br />
         </span>
         <br>
         <br>
@@ -74,13 +78,18 @@
        </h2>
 
        <h3>
-        Air humidity : <span id="humidity">32</span> %
-        <br/>
-        Precipitation : <span id="Precipitation">0</span>%
-        <br/>
-        Wind : <span id="wind">3</span> Km/h 
+        <div class="col">
+            <div class="weatherdata">
+                <ul>
+                    <li>Humidity 56%</li>
+                    <li>Wind 10 km/h</li>
+                    <li>Precipitation 7%</li>
+                </ul>
+            </div>
+        </div>
 
         </h3>
+
 
         <div class="img">
              <img src=" " width=" "alt="">

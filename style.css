@@ -26,12 +26,6 @@ p {
     left: 160px;
 }
 
-
-.unit_tempearature {
-    color: #6f7b8e;
-    font-size: 29px;
-}
-
 .body-temperature {
     color: #596373;
     font-size: 45px;
@@ -51,7 +45,7 @@ p {
 
 .dateNow {
     color: #596373;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     position: relative;
     top: -40px;
@@ -70,8 +64,9 @@ p {
     border-radius: 4px;
     padding: 20px;
     margin: 0 auto;
-    background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    background: linear-gradient(to top, #a4e6f7 0%, #e7f0fd 100%);
     border-radius: 30px;
+    font-family: "Roboto Slab", serif;
     }
 
 
@@ -97,4 +92,15 @@ p {
 
    background-color: aliceblue;
    border-radius: 5px;
+}
+
+.weatherdata {
+    margin-left: 300px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+ul{
+
+    list-style: none;
 }
