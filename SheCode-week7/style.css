@@ -98,7 +98,7 @@ ul{
     padding: 0;
 }
 
-.li{
+li{
     list-style: none;
     color: rgb(33, 37, 41);
     display: block;
